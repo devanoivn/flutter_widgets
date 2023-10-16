@@ -57,9 +57,9 @@ class _HomePageState extends State<utama> {
                       right: 20,
                       width: 60.0,
                       height: 60.0,
-                      child: LoveButton(
+                      child: FavoriteButton(
                         onPressed: toggleLove,
-                        isLoved: favorite,
+                        favorite: favorite,
                       ),
                     ),
                   ],

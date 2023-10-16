@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class LoveButton extends StatefulWidget {
+class FavoriteButton extends StatefulWidget {
   final VoidCallback onPressed;
-  final bool isLoved;
+  final bool favorite;
 
-  LoveButton({required this.onPressed, required this.isLoved});
+  FavoriteButton({required this.onPressed, required this.favorite});
 
   @override
   _LoveButtonState createState() => _LoveButtonState();
 }
 
-class _LoveButtonState extends State<LoveButton> {
+class _LoveButtonState extends State<FavoriteButton> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -23,7 +23,7 @@ class _LoveButtonState extends State<LoveButton> {
         child: Center(
           child: Icon(
             Icons.favorite,
-            color: widget.isLoved ? Colors.grey : Colors.red,
+            color: widget.favorite ? Colors.grey : Colors.red,
             size: 25.0,
           ),
         ),

@@ -9,12 +9,12 @@ class utama extends StatefulWidget {
 }
 
 class _HomePageState extends State<utama> {
-  bool isLoved = false;
+  bool favorite = false;
   String buttonPressed = "Button sudah ditombol";
 
   void toggleLove() {
     setState(() {
-      isLoved = !isLoved;
+      favorite = !favorite;
     });
   }
 
@@ -33,10 +33,7 @@ class _HomePageState extends State<utama> {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [
-              Colors.deepPurple,
-              Colors.white
-            ], // Atur warna gradien sesuai keinginan Anda
+            colors: [Colors.deepPurple, Colors.white],
           ),
         ),
         width: double.infinity,
@@ -55,16 +52,16 @@ class _HomePageState extends State<utama> {
                         fit: BoxFit.fill,
                       ),
                     ),
-                    // Positioned(
-                    //   top: 20,
-                    //   right: 20,
-                    //   width: 60.0,
-                    //   height: 60.0, // Atur sesuai kebutuhan Anda
-                    //   child: LoveButton(
-                    //     onPressed: toggleLove,
-                    //     isLoved: isLoved,
-                    //   ),
-                    // ),
+                    Positioned(
+                      top: 20,
+                      right: 20,
+                      width: 60.0,
+                      height: 60.0,
+                      child: LoveButton(
+                        onPressed: toggleLove,
+                        isLoved: favorite,
+                      ),
+                    ),
                   ],
                 )),
             Flexible(
@@ -78,12 +75,10 @@ class _HomePageState extends State<utama> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8),
                         child: AspectRatio(
-                          aspectRatio:
-                              1.0, // Set aspek rasio menjadi 1:1 untuk membuat gambar menjadi kotak
+                          aspectRatio: 1.0,
                           child: Image.asset(
                             'images/2.jpg',
-                            fit: BoxFit
-                                .cover, // Menggunakan BoxFit.cover untuk mengisi seluruh kotak
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
@@ -95,12 +90,10 @@ class _HomePageState extends State<utama> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8),
                         child: AspectRatio(
-                          aspectRatio:
-                              1.0, // Set aspek rasio menjadi 1:1 untuk membuat gambar menjadi kotak
+                          aspectRatio: 1.0,
                           child: Image.asset(
                             'images/2.jpg',
-                            fit: BoxFit
-                                .cover, // Menggunakan BoxFit.cover untuk mengisi seluruh kotak
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
@@ -112,12 +105,10 @@ class _HomePageState extends State<utama> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8),
                         child: AspectRatio(
-                          aspectRatio:
-                              1.0, // Set aspek rasio menjadi 1:1 untuk membuat gambar menjadi kotak
+                          aspectRatio: 1.0,
                           child: Image.asset(
-                            'images/1.png',
-                            fit: BoxFit
-                                .cover, // Menggunakan BoxFit.cover untuk mengisi seluruh kotak
+                            'images/1.jpeg',
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
@@ -129,12 +120,10 @@ class _HomePageState extends State<utama> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8),
                         child: AspectRatio(
-                          aspectRatio:
-                              1.0, // Set aspek rasio menjadi 1:1 untuk membuat gambar menjadi kotak
+                          aspectRatio: 1.0,
                           child: Image.asset(
-                            'images/1.png',
-                            fit: BoxFit
-                                .cover, // Menggunakan BoxFit.cover untuk mengisi seluruh kotak
+                            'images/1.jpeg',
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),

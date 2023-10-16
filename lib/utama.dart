@@ -53,10 +53,10 @@ class _HomePageState extends State<utama> {
                       ),
                     ),
                     Positioned(
-                      top: 20,
-                      right: 20,
-                      width: 60.0,
-                      height: 60.0,
+                      top: 10,
+                      right: 10,
+                      width: 50.0,
+                      height: 50.0,
                       child: FavoriteButton(
                         onPressed: toggleLove,
                         favorite: favorite,
@@ -75,7 +75,7 @@ class _HomePageState extends State<utama> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: AspectRatio(
-                          aspectRatio: 1.0,
+                          aspectRatio: 1,
                           child: Image.asset(
                             'images/2.jpg',
                             fit: BoxFit.cover,

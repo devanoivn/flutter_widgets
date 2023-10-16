@@ -73,7 +73,7 @@ class _HomePageState extends State<utama> {
                     child: Container(
                       margin: EdgeInsets.fromLTRB(4, 8, 4, 8),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(10),
                         child: AspectRatio(
                           aspectRatio: 1.0,
                           child: Image.asset(
@@ -88,7 +88,7 @@ class _HomePageState extends State<utama> {
                     child: Container(
                       margin: EdgeInsets.fromLTRB(4, 8, 4, 8),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(10),
                         child: AspectRatio(
                           aspectRatio: 1.0,
                           child: Image.asset(
@@ -103,7 +103,7 @@ class _HomePageState extends State<utama> {
                     child: Container(
                       margin: EdgeInsets.fromLTRB(4, 8, 4, 8),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(10),
                         child: AspectRatio(
                           aspectRatio: 1.0,
                           child: Image.asset(
@@ -118,7 +118,7 @@ class _HomePageState extends State<utama> {
                     child: Container(
                       margin: EdgeInsets.fromLTRB(4, 8, 4, 8),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(10),
                         child: AspectRatio(
                           aspectRatio: 1.0,
                           child: Image.asset(
